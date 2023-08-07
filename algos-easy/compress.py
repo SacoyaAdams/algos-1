@@ -13,9 +13,24 @@
 
 
 def compress(s):
-    pass # TODO:
+   
+    count = 1 # keeps track of the consecutive occurences of the same character
+    compressed = "" # stores the cmpressed string
+    for i in range(1, len(s)):
 
+        if s[i] == s[i - 1]:
+            count += 1
 
+        else:
+
+            compressed += str(count) + s[i - 1]
+
+            count = 1
+
+            compressed += str(count) + s[-1]
+
+        return compressed
+            
 
 
 # TEST CASES

@@ -5,7 +5,16 @@
 # Anagrams are strings that contain the same characters, but in any order.
 
 def anagrams(s1, s2):
-  pass #TODO:
+    # anagram is a word or phrase made by rearranging the letters of another word or phrase
+    # use the sort method, it rearranges the elements
+    # compare the sorted versions, to make sure they contain the same characters
+    if (sorted(s1) == sorted(s2)):
+        # if they contain the same characters, print True
+        print(True)
+    else:
+        # else print False
+        print(False)
+
 
 
 
@@ -14,9 +23,9 @@ def anagrams(s1, s2):
 
 
 # # TEST CASES
-anagrams('restful', 'fluster') # -> True
+# anagrams('restful', 'fluster') # -> True
 # anagrams('cats', 'tocs') # -> False
-# anagrams('monkeyswrite', 'newyorktimes') # -> True
+anagrams('monkeyswrite', 'newyorktimes') # -> True
 # anagrams('paper', 'reapa') # -> False
 # anagrams('elbow', 'below') # -> True
 # anagrams('tax', 'taxi') # -> False
